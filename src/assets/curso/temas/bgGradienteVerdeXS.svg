@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1334" height="714" viewBox="0 0 1334 714">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e1f6ef"/>
+    </linearGradient>
+    <clipPath id="clip-Mesa_de_trabajo_1">
+      <rect width="1334" height="714"/>
+    </clipPath>
+  </defs>
+  <g id="Mesa_de_trabajo_1" data-name="Mesa de trabajo – 1" clip-path="url(#clip-Mesa_de_trabajo_1)">
+    <rect width="1334" height="714" fill="#fff"/>
+    <rect id="Rectángulo_382628" data-name="Rectángulo 382628" width="1334" height="715" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
