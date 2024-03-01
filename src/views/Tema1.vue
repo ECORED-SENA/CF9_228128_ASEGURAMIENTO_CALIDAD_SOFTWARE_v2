@@ -22,9 +22,9 @@
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.1 Aplicación cliente de MySQL 
 
-    p Primero, se deben seguir las siguientes instrucciones, para conectarse a la base de datos a través del cliente de línea de comandos: 
+    p(data-aos="fade-left") Primero, se deben seguir las siguientes instrucciones, para conectarse a la base de datos a través del cliente de línea de comandos: 
 
-    .bg-img-1.bg-full.mb-5
+    .bg-img-1.bg-full.mb-5(data-aos="zoom-in")
       .bg-container-full
         .tarjeta.tarjeta--azul.p-4
           LineaTiempoC.color-acento-contenido(text-small)
@@ -64,21 +64,21 @@
       .bg-container-full
         .row.justify-content-center 
           .col-xl-8
-            .bg-color-acento-contenido.p-4.border-radius-default.mb-4
+            .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
               .row 
                 .col-auto
                   img(src='@/assets/curso/temas/icon1.svg', alt='', style="max-width: 72px")
                 .col
                   p.mb-0 En adelante, los resultados de interface de línea de comandos se presentarán como se presenta a continuación:  
 
-            figure.mb-4
+            figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura1.svg', alt='')
 
 
-            .bg-color-acento-contenido.p-4.border-radius-default.mb-4
+            .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
               p.mb-0 Y, para salir de la consola de comando, se usa el comando quit (en mayúscula o minúscula). 
 
-            figure.mb-4
+            figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura2.svg', alt='')
 
 
@@ -92,12 +92,12 @@
 
         .row.mb-5
           .col-xl-5
-            figure.mb-4
+            figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura3.svg', alt='')
           .col-xl-7
-            p #[b SELECT] es la sentencia SQL para elegir datos de bases de datos, además se puede utilizar, como en esta situación, para consultar cambiantes del sistema o resultados de funcionalidades. En este caso, se ha consultado el resultado de la función #[b VERSION], se sabe que es una función porque tiene paréntesis” ()”, y de la variable #[b CURRENT_DATE]. 
+            p(data-aos="fade-left") #[b SELECT] es la sentencia SQL para elegir datos de bases de datos, además se puede utilizar, como en esta situación, para consultar cambiantes del sistema o resultados de funcionalidades. En este caso, se ha consultado el resultado de la función #[b VERSION], se sabe que es una función porque tiene paréntesis” ()”, y de la variable #[b CURRENT_DATE]. 
 
-            .bg-color-acento-contenido.p-4.border-radius-default.mb-4
+            .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
               p.mb-0 Toda sentencia debe finalizar con punto y coma (;), luego debe dar #[b enter]. 
 
     Separador
@@ -108,16 +108,16 @@
     .bg-img-2.bg-full.mb-5
       .bg-container-full
 
-        p En el nivel teórico, existen dos lenguajes para el uso de bases de datos: 
+        p(data-aos='fade-right') En el nivel teórico, existen dos lenguajes para el uso de bases de datos: 
 
         .row.justify-content-center.mb-5
-          .col-lg-6.mb-lg-0.mb-3
+          .col-lg-6.mb-lg-0.mb-3(data-aos='fade-right')
             .p-5.h-100.card2(style="background-color: #273A89")
               img(src='@/assets/curso/temas/icon2.svg', alt='' style="width: 73px").mb-4
               .titulo-card.d-inline-block(style="background-color: #3EE2A8").p-1.px-3.mb-3
                 h4.d-inline-block.mb-0 DDL #[em (Data Definition Language)].
               p.text-white Es el lenguaje que se emplea para establecer bases de datos y tablas, y para transformar sus estructuras. Este lenguaje trabaja sobre ciertas tablas especiales llamadas diccionario de datos.
-          .col-lg-6.mb-lg-0.mb-3
+          .col-lg-6.mb-lg-0.mb-3(data-aos='fade-left')
             .p-5.h-100.card2(style="background-color: #273A89")
               img(src='@/assets/curso/temas/icon2.svg', alt='' style="width: 73px").mb-4
               .titulo-card.d-inline-block(style="background-color: #3EE2A8").p-1.px-3.mb-3
@@ -126,10 +126,10 @@
 
         .row.justify-content-center.align-items-center.mb-5
           .col-lg-5
-            .p-4
+            .p-4(data-aos='fade-right')
               img(src='@/assets/curso/temas/3.svg', alt='' style="max-width: 505px").mb-4.mx-auto
 
-          .col-lg-7
+          .col-lg-7(data-aos='fade-left')
             p #[b SQL abarca ambos lenguajes:]
 
             .bg-color-acento-botones.border-radius-defult.my-4(style="width: 200px")
