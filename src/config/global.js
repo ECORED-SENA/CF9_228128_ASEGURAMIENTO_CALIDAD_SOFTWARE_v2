@@ -137,7 +137,7 @@ export default {
         ],
       },
       {
-        nombreRuta: 'tema4',
+        nombreRuta: 'tema5',
         numero: '5',
         titulo: 'Consulta multitablas - DML',
         desarrolloContenidos: true,

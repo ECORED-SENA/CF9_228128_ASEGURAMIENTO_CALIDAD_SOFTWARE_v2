@@ -97,20 +97,24 @@
     Separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.3 Borrado de registros 
-    p.mb-5(data-aos='fade-right') Para borrar filas se utiliza la sentencia #[em #[b DELETE.]] La sintaxis es muy similar a la de #[em #[b UPDATE:]] 
-    .row.justify-content-center.mb-5
-      .col-lg-6.col-8: img(src='@/assets/curso/temas/22.png', alt='')
-    p.mb-5(data-aos='fade-right') Para borrar el registro que tiene por nombre Perillo se procede de la siguiente forma: 
-    .row.justify-content-center.mb-5
-      .col-lg-6.col-8: img(src='@/assets/curso/temas/23.png', alt='')
-    p.mb-5(data-aos='fade-right') A continuación, se debe borrar aquello que tenga edad comprendida entre 30 (incluyendo 30) y 50 años (incluyendo 50), para eso se usa un operador llamado #[em #[b AND]], se verán con más detalle estos operadores. 
-    .row.justify-content-center.mb-5
-      .col-lg-6.col-8
-        img(src='@/assets/curso/temas/23.png', alt='').mb-2
-        figcaption  Nota. Tomado de MySQL 8.0 Reference Manual (2021). 
-    .tarjeta.color-acento-contenido.p-4.d-inline-block.rounded-3
-      h5.mb-0 Vaciar una tabla
-
+    .fondo-t3.mn.p-5
+      p.mb-5(data-aos='fade-right') Para borrar filas se utiliza la sentencia #[em #[b DELETE.]] La sintaxis es muy similar a la de #[em #[b UPDATE:]] 
+      .row.justify-content-center.mb-5
+        .col-lg-6.col-8: img(src='@/assets/curso/temas/22.png', alt='')
+      p.mb-5(data-aos='fade-right') Para borrar el registro que tiene por nombre Perillo se procede de la siguiente forma: 
+      .row.justify-content-center.mb-5
+        .col-lg-6.col-8: img(src='@/assets/curso/temas/23.png', alt='')
+      p.mb-5(data-aos='fade-right') A continuación, se debe borrar aquello que tenga edad comprendida entre 30 (incluyendo 30) y 50 años (incluyendo 50), para eso se usa un operador llamado #[em #[b AND]], se verán con más detalle estos operadores. 
+      .row.justify-content-center.mb-5
+        .col-lg-6.col-8
+          img(src='@/assets/curso/temas/24.png', alt='').mb-2
+          figcaption  Nota. Tomado de MySQL 8.0 Reference Manual (2021). 
+      .tarjeta.color-acento-contenido.p-4.d-inline-block.rounded-3.mb-4
+        h5.mb-0 Vaciar una tabla
+      p.mb-5(data-aos='fade-right') Cuando se deseen borrar todas las filas de una tabla, se puede utilizar una sentencia #[em #[b DELETE]] sin condiciones, como se vio en el punto anterior. Pero existe una sentencia alternativa, #[em #[b TRUNCATE]], que hace la misma tarea de una forma mucho más veloz. La diferencia es que #[em #[b DELETE]] hace un borrado secuencial de la tabla, fila por fila y  #[em #[b TRUNCATE]] elimina la tabla y la vuelve a crear desocupada, lo que es mucho más eficaz. 
+      .row.justify-content-center.mb-5
+        .col-lg-6.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/25.png', alt='')
+        .col-lg-6.col-8: img(src='@/assets/curso/temas/26.svg', alt='')
 
 </template>
 

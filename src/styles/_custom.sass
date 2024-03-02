@@ -40,6 +40,16 @@
   background-position: start
   background-repeat: no-repeat
   background-size: cover
+.fondo-t3
+  background-image: url('../assets/curso/temas/fondo_t3.svg')
+  background-position: start
+  background-repeat: no-repeat
+  background-size: cover
+.fondo-t4
+  background-image: url('../assets/curso/temas/fondo_t4.svg')
+  background-position: start
+  background-repeat: no-repeat
+  background-size: cover
 .card1
   background-image: url('../assets/curso/temas/card1.svg')
   background-position: start
@@ -178,7 +188,19 @@ span.resalte
 
   p
     color: white
-
+.tarjeta.color-secundario
+  overflow: hidden
+  position: relative
+  p
+    color: white
+  b, em
+    color: #3ee2a8 !important
+  &:before
+    content: url(../assets/curso/temas/adorno.svg)
+    position: absolute
+    right: 0
+    top: 0
+    transform: translate(20px,40px)
 .cajon-b.color-blue-ligth:before
   background-color: #DCECFE
   bottom: 0
