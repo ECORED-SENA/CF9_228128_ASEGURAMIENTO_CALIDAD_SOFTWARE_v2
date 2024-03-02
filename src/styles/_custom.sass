@@ -62,7 +62,7 @@ span.resalte
   background-color: #273A89 !important
 .bg-blueligth
   background-color: #DCECFE !important
-  a 
+  a
     text-overflow: ellipsis
     max-width: 80%
     overflow: hidden
@@ -100,7 +100,7 @@ span.resalte
   background: $color-acento-contenido
 
 .bg-color-acento-botones
-  background: $color-acento-botones  
+  background: $color-acento-botones
 
 .border-radius-default
   border-radius: 10px
@@ -114,7 +114,7 @@ span.resalte
   @media (max-width: 991.98px)
     background-size: 100% 50%
     background-position: center bottom
-    
+
 .t2
   *
     color: white
@@ -129,24 +129,24 @@ span.resalte
   //   background-color: #3EE2A8 !important
   //   background-size: 0% 0%   
 
-.img-a 
+.img-a
   display: block
   margin: auto
 
 .img-t
   width: auto !important
-  height: auto !important 
+  height: auto !important
 
 .img-mov
   @media (max-width: 810px)
     display: block
     margin: auto
     width: auto
-    height: auto    
+    height: auto
 
 .j
   display: grid
-  place-items: center    
+  place-items: center
 
 .fa-ul
   margin-left: 0 !important
@@ -157,9 +157,8 @@ span.resalte
       margin-right: 7px
       font-size: 1.4rem
 
-
 .tarjeta--azul
-  background: $color-secundario
+  background: #13215C
 
   .linea-tiempo-c__header__item__year,
   p
@@ -170,13 +169,12 @@ span.resalte
     background: $color-acento-botones
     border: 0
 
-  
 .tarjeta--bgSlyde
   background-image: url(../assets/curso/temas/bgSlyde.png)
   background-repeat: no-repeat
   background-size: cover
   background-position: top left
-  box-shadow: 0 5px 32px 0 #004cff36      
+  box-shadow: 0 5px 32px 0 #004cff36
 
   p
     color: white
@@ -186,9 +184,10 @@ span.resalte
   bottom: 0
   opacity: .9
 
+b.text-color-acento-contenido
+  color: $color-acento-contenido !important
 .text-color-acento-contenido
-    color: $color-acento-contenido
-
+  color: $color-acento-contenido !important
 
 .slyder-a__btn--sigt, .slyder-a__btn--atrs
   @media (max-width: 810px)
@@ -196,16 +195,16 @@ span.resalte
     height: 45px
   @media (max-width: $bp-max-sm )
     width: 35px
-    height: 35px  
-.slyder-a__bullets__item    
+    height: 35px
+.slyder-a__bullets__item
   @media (max-width: 810px)
     width: 15px
-    height: 15px  
-    margin: 0 3px   
+    height: 15px
+    margin: 0 3px
   @media (max-width: $bp-max-sm)
     width: 15px
-    height: 15px  
-    margin: 0 3px        
+    height: 15px
+    margin: 0 3px
 
 .slyder-a
   &__tipo-a
@@ -214,7 +213,7 @@ span.resalte
         position: absolute
         bottom: 20px !important
         left: 50%
-        transform: translateX(-50%)            
+        transform: translateX(-50%)
 
 .slyder-a__bullets__item--active
   background-color: #FFFFFF !important
@@ -229,3 +228,8 @@ span.resalte
   .anexo__texto p,
   .anexo__texto p strong em,
     color: $color-sistema-texto
+a.lnk
+  img
+    transition: transform .3s ease-in-out
+  img:hover
+    transform: scale(1.1)
