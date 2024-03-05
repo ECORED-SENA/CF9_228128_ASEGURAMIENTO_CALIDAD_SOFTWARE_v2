@@ -202,32 +202,76 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
-    },
-    {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Bases de datos',
+      referencia:
+        'Microsoft. (2021). Fundamentos de la normalización de la base de datos.',
+      tipo: 'Página web',
+      link:
+        'https://learn.microsoft.com/es-es/office/troubleshoot/access/database-normalization-description',
     },
   ],
   glosario: [
     {
-      termino: 'Término',
-      significado: 'Texto de la definición',
+      termino: 'Base de datos',
+      significado:
+        'conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.',
     },
     {
-      termino: '<em>Término con extranjerismo</em>',
-      significado: 'Definición',
+      termino: 'Diccionario de datos',
+      significado:
+        'conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora.',
+    },
+    {
+      termino: 'Metadatos',
+      significado:
+        'conjunto unitario de instrucciones que permite a una computadora realizar funciones diversas, como el tratamiento de textos, el diseño de gráficos, la resolución de problemas matemáticos, el manejo de bancos de datos',
     },
   ],
   referencias: [
     {
-      referencia: '',
+      referencia:
+        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
       link: '',
+    },
+    {
+      referencia:
+        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
+      link: '',
+    },
+    {
+      referencia:
+        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
+      link: '',
+    },
+    {
+      referencia:
+        'Kyocera. (2021). Conceptos sobre base de datos orientada a objetos. KYOCERA Document Solutions España S.A.',
+      link:
+        'https://www.kyoceradocumentsolutions.es/es/smarter-workspaces/business-challenges/paperless/conceptos-sobre-base-de-datos-orientada-a-objetos.html',
+    },
+    {
+      referencia:
+        'López, J. (2009). Algoritmos y programación (guía para docentes).',
+      link: 'http://www.eduteka.org/GuiaAlgoritmos.php',
+    },
+    {
+      referencia:
+        'MySQL 8.0 Reference Manual. (2021).13.1.20.5 FOREIGN KEY Constraints. MySQL.',
+      link:
+        'https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html',
+    },
+    {
+      referencia:
+        'MySQL 8.0 Reference Manual. (2021). 3.3.2 Creating a Table. MySQL.',
+      link: 'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
+    },
+    {
+      referencia: 'MySQLTutorial. (2020). MySQL AND Operator. MySQL.',
+      link: 'https://www.mysqltutorial.org/mysql-and',
+    },
+    {
+      referencia: 'MySQLTutorial. (2020). MySQL OR Operator. MySQL.',
+      link: 'https://www.mysqltutorial.org/mysql-or',
     },
   ],
   creditos: [
@@ -250,8 +294,20 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Nombre responsable',
-          cargo: 'Nombre del rol',
+          nombre: 'Henry Eduardo Bastidas Pauma',
+          cargo: 'Experto Temático',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Peter Emerson Pinchao Solis',
+          cargo: 'Experto Temático',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Ana Catalina Córdoba Sus',
+          cargo: 'Evaluadora Instruccional',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
       ],
@@ -260,22 +316,17 @@ export default {
       titulo: 'DISEÑO Y DESARROLLO DE RECURSOS EDUCATIVOS DIGITALES',
       autores: [
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Carlos Julian Ramirez Benitez',
           cargo: 'Diseñador de Contenidos Digitales',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre responsable',
+          nombre: 'Edgar Mauricio Cortes Garcia',
           cargo: 'Desarrollador Fullstack',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {
-          nombre: 'Nombre',
-          cargo: 'Animador y Producción audiovisual',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Nombre',
+          nombre: 'Edgar Mauricio Cortes Garcia',
           cargo: 'Actividad Didáctica',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
