@@ -28,8 +28,8 @@
           h4.mb-0 Áreas 
         img(src='@/assets/curso/temas/64.png', alt='')
     Separador
-    #t_5_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 5.1 Combinación interna (INNER JOIN) 
+    #t_5_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 5.2 Combinación interna (INNER JOIN) 
     p.mb-5(data-aos='fade-right') Con esta operación, cada fila en la tabla #[b empleados] es combinada (o unida) con los correspondientes de la tabla #[b áreas] que satisface la condición que se especifiquen en el predicado del #[em #[b JOIN.]] Cualquier fila de la tabla #[b empleados] o de la tabla áreas que no tenga uno correspondiente en la otra tabla (áreas) es excluido y solo aparecerán los que tengan correspondencia en la otra tabla. Este es el tipo de #[em #[b JOIN ]]más utilizado, por lo que es considerado el tipo de combinación predeterminado
     .row.justify-content-center.mb-5
       .col-lg-4.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/65.png', alt='')
@@ -55,8 +55,8 @@
           span SQL 
         img(src='@/assets/curso/temas/69.svg', alt='')
     Separador
-    #t_5_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 5.1 Combinación interna #[em (INNER JOIN)]  
+    #t_5_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 5.2 Combinación externa
     p.mb-5(data-aos='fade-right') Es una variedad de composición de tablas que permite seleccionar algunas filas de una tabla aunque estas no tengan correspondencia con las filas de la otra tabla con la que se combina. 
     .fondo-t4.mn.p-5
       .row.justify-content-center.mb-5

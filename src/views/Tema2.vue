@@ -97,56 +97,151 @@
     #t_2_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 2.2 Claves foráneas
 
-    p En MySQL únicamente existe soporte para claves foráneas en tablas de tipo #[strong InnoDB].  
-    p.mb-5  #[strong InnoDB] es el motor de almacenamiento por defecto de las últimas versiones de MySQL, no obstante, esto no imposibilita usarlas en otros tipos de tablas.
-    
+    .bg-img-xl.bg-full.mb-5
+      .bg-container-full
+        p En MySQL únicamente existe soporte para claves foráneas en tablas de tipo #[strong InnoDB].  
+        p.mb-5  #[strong InnoDB] es el motor de almacenamiento por defecto de las últimas versiones de MySQL, no obstante, esto no imposibilita usarlas en otros tipos de tablas.
+        
 
-    .row.mb-4.align-items-center
+        .row.mb-4.align-items-center
+          .col-xl-5
+
+            .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
+              .row 
+                .col-auto
+                  img(src='@/assets/curso/temas/icon1.svg', alt='', style="max-width: 72px")
+                .col
+                  p.mb-0 Primero se crea la tabla persona:  
+
+
+            figure.mt-5
+              img(src='@/assets/curso/temas/6.png')
+
+          .col-xl-7 
+            p Si se quiere crear una base de datos que corresponda al modelo que se está presentando anteriormente, las sentencias para la tabla teléfonos con la referencia a la tabla, sería: 
+
+            figure.mt-5
+              img(src='@/assets/curso/temas/7.png')
+
+
+
+        p Se ha usado una definición a modo referencia para la columna “numero” de la tabla 'telefonos', señalando que es una clave foránea oportuna a la columna 'id_persona' de la tabla 'persona' a través de la columna persona_id. No obstante, aunque la sintaxis, se evidencia. 
+
+        .row.mb-5.align-items-center
+          .col-xl-5
+
+            p La expresión #[strong #[em DELETE CASCADE]], hace que, si se borra una fila de la tabla persona que tiene relacionados registros telefónicos a través de la columna persona_id en la tabla telefonos, estos registros (localizados en la tabla telefonos) se borren si se borra el de la tabla persona; a este tipo de condiciones se le llama restricción de integridad referencial.
+
+
+            p De igual forma #[strong #[em UPDATE CASCADE]], hace que, si el id_persona en una fila de la tabla persona es actualizado a otro valor y existen referencias en la columna persona_id de la tabla telefonos con el valor inicial, al cambiar el valor en el registro id_persona, cambien también el valor en los registros en la columna persona_id de la tabla telefonos. A este tipo de condiciones también se le llama restricción de integridad referencial. 
+
+            p #[strong Y ejecutándola en la consola, el resultado sería: ]
+
+
+
+          .col-xl-7 
+            figure.mt-5
+              img(src='@/assets/curso/temas/8.png')
+
+
+        .row.justify-content-center
+          .col-xl-10
+            div(style="background-color: #BAE9D9").p-4.mb-5
+              p Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor #[strong InnoDB] para que las reglas de restricción de integridad apliquen: 
+
+            .row.mb-3
+              .col-xl-6.offset-xl-6
+                p.mb-0 Y también para la tabla #[strong telefonos2:]
+
+            .row.mb-5
+              .col-xl-6
+                figure
+                  img(src='@/assets/curso/temas/2-9.png')
+
+              .col-xl-6
+                figure
+                  img(src='@/assets/curso/temas/2-10.png')
+
+
+        p Es necesario que la columna que posee una definición de clave foránea esté indexada #[strong KEY(numero)]. Sin embargo, esto no debe de generar preocupación, porque si no se hace de forma clara, MySQL lo hará de forma implícita. 
+
+        p.mb-5 Dicha forma precisa una clave foránea en la columna #[strong persona_id], La cual hace referencia a la columna id_persona de la tabla personas2 #[strong (FOREIGN KEY (persona_id) REFERENCES personas2)]. #[span.etiqueta La definición contiene las tareas a efectuar cuando se excluya una fila en la tabla #[strong personas2].] 
+
+        .row.justify-content-center 
+          .col-xl-9
+
+            .row.justify-content-center.mb-5
+              .col-lg-6(data-aos='fade-right')
+                .tarjeta.color-secundario.p-4.h-100 
+                  .tarjeta.color-acento-contenido.mt-5.p-2.d-inline-block.rounded-3.mb-4
+                    h4.mb-0.fst-italic.px-3 ON DELETE &lt;opcion&gt;,
+                  p define las acciones que deben de realizar en la tabla actual, cuando se elimine una fila en la tabla referenciada.
+
+
+
+              .col-lg-6(data-aos='fade-left')
+                .tarjeta.color-secundario.p-4.h-100 
+                  .tarjeta.color-acento-contenido.mt-5.p-2.d-inline-block.rounded-3.mb-4
+                    h4.mb-0.fst-italic.px-3 ON UPDATE &lt;opcion&gt;,
+                  p es semejante, define las acciones que deben de realizar en la tabla actual, cuando se modifique o actualice la columna de una fila en la tabla referenciada.
+
+
+    p #[strong Existen cinco opciones diferentes. A continuación, conozca cada una de ellas (MySQL 8.0 Reference Manual, 2021): ]
+
+
+    .row.mb-5
+      .col-xl-7
+        AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta--blueligth")
+          .row(titulo="RESTRICT ")
+            p Esta opción imposibilita borrar o editar filas en la tabla referenciada si hay filas con el mismo valor de clave foránea. 
+
+          .row(titulo="CASCADE")
+            p Borrar o modificar una clave en una fila en la tabla referenciada con un valor fijo de clave, conlleva borrar las filas con el mismo valor de clave foránea o cambiar los valores de esas claves foráneas.  
+
+          .row(titulo="SET NULL ")
+            p Borrar o editar una clave en una fila en la tabla referenciada con un valor fijo de clave, involucra determinar el valor NULL a las claves foráneas con el mismo valor.
+          
+          .row(titulo="NO ACTION ")
+            p Las claves foráneas no se alteran, ni se eliminan filas en la tabla que las contiene. 
+          
+          .row(titulo="SET DEFAULT  ")
+            p Borrar o alterar una clave en una fila en la tabla referenciada con un valor explícito, involucra asignar el valor por defecto a las claves foráneas con el mismo valor. 
+
       .col-xl-5
-
-        .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
-          .row 
-            .col-auto
-              img(src='@/assets/curso/temas/icon1.svg', alt='', style="max-width: 72px")
-            .col
-              p.mb-0 Primero se crea la tabla persona:  
+        figure
+          img.img-a.img-t(src='@/assets/curso/temas/2-11.png') 
 
 
-        figure.mt-5
-          img(src='@/assets/curso/temas/6.png')
+    .row.justify-content-center.mb-5
+      .col-xl-8
+        p.mb-3 #[strong Ejemplo]
+        figure
+          img.img-a.img-t(src='@/assets/curso/temas/2-12.png') 
 
-      .col-xl-7 
-        p Si se quiere crear una base de datos que corresponda al modelo que se está presentando anteriormente, las sentencias para la tabla teléfonos con la referencia a la tabla, sería: 
+    p.mb-5 Si se pretende borrar una fila de #[strong personas3] con cierto valor de #[strong id_persona], se provocará un error si existen filas en la tabla #[strong telefonos3] en la columna #[strong persona_id] con mismo valor. La fila de #[strong personas3] no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla teléfonos3, lo anterior debió que se ha definido restricción #[strong DELETE RESTRICT]. 
 
-        figure.mt-5
-          img(src='@/assets/curso/temas/7.png')
-
-    p Se ha usado una definición a modo referencia para la columna “numero” de la tabla 'telefonos', señalando que es una clave foránea oportuna a la columna 'id_persona' de la tabla 'persona' a través de la columna persona_id. No obstante, aunque la sintaxis, se evidencia. 
-
-    .row.mb-4.align-items-center
-      .col-xl-5
-
-        p La expresión #[strong #[em DELETE CASCADE]], hace que, si se borra una fila de la tabla persona que tiene relacionados registros telefónicos a través de la columna persona_id en la tabla telefonos, estos registros (localizados en la tabla telefonos) se borren si se borra el de la tabla persona; a este tipo de condiciones se le llama restricción de integridad referencial.
-
-
-        p De igual forma #[strong #[em UPDATE CASCADE]], hace que, si el id_persona en una fila de la tabla persona es actualizado a otro valor y existen referencias en la columna persona_id de la tabla telefonos con el valor inicial, al cambiar el valor en el registro id_persona, cambien también el valor en los registros en la columna persona_id de la tabla telefonos. A este tipo de condiciones también se le llama restricción de integridad referencial. 
-
-        p #[strong Y ejecutándola en la consola, el resultado sería: ]
-
-
-
-      .col-xl-7 
-
-        figure.mt-5
-          img(src='@/assets/curso/temas/8.png')
-
-
-    .row.justify-content-center
+    .row.justify-content-center.mb-5
       .col-xl-10
-        div(style="background-color: #BAE9D9").p-4.mb-4
-          p Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor #[strong InnoDB] para que las reglas de restricción de integridad apliquen: 
+        div(style="background-color: #BAE9D9").p-4.rounded-3
+          p.mb-0 Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor #[strong InnoDB] para que las reglas de restricción de integridad apliquen:
 
+    p Observe los datos de las tablas #[strong personas3] y #[strong telefonos3]:  
 
+    .row.justify-content-center.mb-5
+      .col-xl-10
+
+        .row        
+          .col-xl-6
+            figure
+              img.img-a.img-t(src='@/assets/curso/temas/2-13.png') 
+
+          .col-xl-6
+            figure
+              img.img-a.img-t(src='@/assets/curso/temas/2-14.png') 
+
+    p Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 'teléfonos3' con el valor 1 en la columna 'persona_id'. Sí será posible borrar la fila correspondiente a "Menganito", debido a que no existe fila alguna en la tabla 'telefonos3' con el valor 2 en la columna 'persona_id'. Si alteramos el valor de 'id_persona' en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 'persona_id' de las filas 3ª y 6ª de la tabla 'telefonos3': 
+
+    
 </template>
 
 <script>
