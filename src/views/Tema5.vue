@@ -57,7 +57,7 @@
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 1
           span SQL 
-        img(src='@/assets/curso/temas/69.svg', alt='')
+        img(src='@/assets/curso/temas/69.svg', alt='Una imagen ilustrativa que muestra distintos tipos de operaciones JOIN en teoría de conjuntos o bases de datos, representadas mediante diagramas de Venn. Se muestran seis diagramas etiquetados de la siguiente manera:LEFT JOIN,RIGHT JOIN,FULL OUTER JOIN,LEFT JOIN EXCLUDING INNER JOIN,RIGHT JOIN EXCLUDING INNER JOIN,FULL OUTER JOIN EXCLUDING INNER JOIN,INNER JOIN.')
     Separador
     #t_5_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 5.2 Combinación externa
