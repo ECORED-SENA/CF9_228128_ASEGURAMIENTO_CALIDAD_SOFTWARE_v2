@@ -86,7 +86,7 @@
         br
         |El empleado que no tiene área se encuentra en la región amarilla del diagrama de la derecha, mientras que los empleados con área están en la franja naranja, en la intersección de empleados y áreas. 
       .row.justify-content-center.mb-5
-        .col-lg-7.col-8: img(src='@/assets/curso/temas/73.png', alt='')
+        .col-lg-5: img(src='@/assets/curso/temas/join5.png', alt='')
       .row.justify-content-center.mb-5
         .col-lg-5.mb-lg-0.mb-3
           .tarjeta.color-secundario.p-5.h-100 
@@ -102,10 +102,10 @@
                 | #[b.text-color-acento-contenido RIGHT JOIN areas as a ON a.id_area = e.area_id ]
         .col-lg-5.mb-lg-0.mb-3
           .tarjeta.p-4(style="background-color: #bae9d9 ").h-100
-            img(src='@/assets/curso/temas/72.svg', alt='', style="max-width: 600px").m-auto
+            img(src='@/assets/curso/temas/72.svg', alt='').m-auto
             p La sentencia #[b #[em LEFT JOIN]] devuelve la pareja de todos los valores de la tabla izquierda (empleados), con los valores de la tabla de la derecha (áreas) correspondientes, si los hay, o retorna un valor nulo #[b #[em NULL] ]en los campos de la tabla derecha cuando no haya correspondencia.
       .row.justify-content-center.mb-5
-        .col-lg-8: img(src='@/assets/curso/temas/73.png', alt='', style="max-width: 600px")
+        .col-lg-5: img(src='@/assets/curso/temas/join2-5.png', alt='')
 
 
 </template>
