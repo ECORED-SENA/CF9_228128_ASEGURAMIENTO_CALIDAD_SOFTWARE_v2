@@ -13,18 +13,22 @@
           p.mb-0 Para explicar este tipo de ejercicios, crearemos una base de datos de empleados llamada ehr, y las tablas empleados y áreas, se relacionan así: un empleado pertenece a un área y un área puede tener varios empleados.
       .col-lg-5.col-6: img(src='@/assets/curso/temas/60.png', alt='')
     .row.justify-content-center.mb-5
-      .col-lg-6.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/61.png', alt='')
-      .col-lg-6.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/62.png', alt='')
+      .col-lg-6.col-7.mb-lg-0.mb-3
+        p.mb-5(data-aos='fade-right') Note que #[b area_id] en la tabla empleados puede ser nuleable: 
+        img(src='@/assets/curso/temas/61.png', alt='')
+      .col-lg-6.col-7.mb-lg-0.mb-3
+        p.mb-5(data-aos='fade-right') Se insertarán los siguientes datos: 
+        img(src='@/assets/curso/temas/62.png', alt='')
     .row.justify-content-center.mb-5
       .col-lg-8
         p Y los datos quedan así:  
     .row.justify-content-center.mb-5
-      .col-lg-4.col-6.mb-lg-0.mb-3
-        .tarjeta.color-acento-botone.p-4.mb-5
+      .col-lg-4.col-8.mb-lg-0.mb-3
+        .rounded-3.p-4.mb-5(style="background-color: #ffce00")
           h4.mb-0 Empleados
         img(src='@/assets/curso/temas/63.png', alt='')
-      .col-lg-4.col-6.mb-lg-0.mb-3
-        .tarjeta.color-acento-botone.p-4.mb-5
+      .col-lg-4.col-8.mb-lg-0.mb-3
+        .rounded-3.p-4.mb-5(style="background-color: #ffce00")
           h4.mb-0 Áreas 
         img(src='@/assets/curso/temas/64.png', alt='')
     Separador
@@ -32,19 +36,19 @@
       h2 5.2 Combinación interna (INNER JOIN) 
     p.mb-5(data-aos='fade-right') Con esta operación, cada fila en la tabla #[b empleados] es combinada (o unida) con los correspondientes de la tabla #[b áreas] que satisface la condición que se especifiquen en el predicado del #[em #[b JOIN.]] Cualquier fila de la tabla #[b empleados] o de la tabla áreas que no tenga uno correspondiente en la otra tabla (áreas) es excluido y solo aparecerán los que tengan correspondencia en la otra tabla. Este es el tipo de #[em #[b JOIN ]]más utilizado, por lo que es considerado el tipo de combinación predeterminado
     .row.justify-content-center.mb-5
-      .col-lg-4.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/65.png', alt='')
-      .col-lg-4.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/66.png', alt='')
+      .col-lg-4.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/65.png', alt='')
+      .col-lg-4.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/66.png', alt='')
     .row.justify-content-center.mb-5
-      .col-lg-4.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/67.svg', alt='')
+      .col-lg-4.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/67.svg', alt='')
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.p-4(style="background-color: #bae9d9 ")
-          p.mb-5(data-aos='fade-right') La condición de la relación #[em #[b (a.id_area= e.area_id)]] consiste en que debe estar presente en ambas tablas el valor. Cuando el empleado tiene #[em #[b NULL]] en area_id no aparece, debido a que no puede cumplirla. Esto se representa con un Diagrama de Venn en la conjunción, porque el valor debe estar en ambas tablas. 
+          p.mb-0(data-aos='fade-right') La condición de la relación #[em #[b (a.id_area= e.area_id)]] consiste en que debe estar presente en ambas tablas el valor. Cuando el empleado tiene #[em #[b NULL]] en area_id no aparece, debido a que no puede cumplirla. Esto se representa con un Diagrama de Venn en la conjunción, porque el valor debe estar en ambas tablas. 
     .row.justify-content-center.mb-5
       .col-lg-7.mb-lg-0.mb-3 
         .p-4(style="background-color: #dcecfe ").mb-4
           .row.justify-content-center
-            .col-lg-2.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/icon4.svg', alt='')
+            .col-lg-2.col-3.mb-lg-0.mb-3: img(src='@/assets/curso/temas/icon4.svg', alt='')
             .col-lg-10: p.mb-0 Existe otros tipos de consultas, las #[em #[b FULL JOIN, FULL OUTER JOIN, CROSS JOIN]],  que no se verán porque son muy poco empleadas, sin embargo, con el concepto principal se puede acceder a la documentación en la Web para comprobar su funcionamiento.  
         p A través de la siguiente imagen se representan también otros tipos de relaciones, Diagramas de Venn que  permiten visualizar resultados retornados. Se puede usar para ayudar a comprender los resultados que se deben esperar con cada variante de las sentencias JOIN. 
       .col-lg-5.mb-lg-0.mb-3: img(src='@/assets/curso/temas/68.png', alt='') 

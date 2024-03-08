@@ -10,7 +10,7 @@
     .row.justify-content-center.align-items-center.bg11.px-3.py-4(data-aos="fade-left")
       .col-lg-12
         .row.justify-content-center.align-items-center.bg10
-          .col-lg-auto.col-md-12
+          .col-lg-auto.col-md-12.mb-lg-0.mb-3
             img(data-aos="zoom-in")(src='@/assets/curso/temas/1.png', style="max-width: 287px").mx-auto  
           .col-lg(data-aos="fade-down") 
             p(data-aos="fade-down").pt-md-3.pt-lg-0 Al iniciar a trabajar con el SGBD, existen varias maneras de enlazar una comunicación con el servidor de MySQL. Generalmente en el software, se usará un API para hacer las consultas y otras operaciones con el servidor. Por ejemplo, en PHP, esta API está integrada con el lenguaje. 

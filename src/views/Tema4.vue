@@ -8,7 +8,7 @@
       h1 SQL para consulta de datos - DML 
     .p-4(style="background-color: #bae9d9")
       .row.justify-content-center.align-items-center
-        .col-lg-3: img(src='@/assets/curso/temas/27.png', alt='' style="z-index: 1").position-relative
+        .col-lg-3.col-6: img(src='@/assets/curso/temas/27.png', alt='' style="z-index: 1").position-relative
         .col-lg-9
           .bg-white.p-4(style="margin-left: -3rem; z-index: -1")
             p.mb-0.ms-4 Para encontrar la información dentro de una base de datos, es preciso escudriñar dentro de la estructura de los datos su estructura y su naturaleza, por ejemplo, el tipo de datos fecha tiene una estructura YYYY-MM-DD,  y si necesito listar los registros de un año determinado, se necesita una función que refiera a ese dato particular dentro de la columna; por este motivo se necesita revisar algunas funciones antes de empezar a trabajar consultas de datos. 
@@ -300,7 +300,7 @@
             br
             |La tabla de verdad es: 
           .row
-            .col-md-6.mb-4.mb-md-0
+            .col-lg-6.mb-4.mb-md-0
               .tabla-a.color-acento-botones.mb-5
                 table.fw-bold
                   caption Nota. Tomado de MySQL AND Operator By Examples, 2020.
@@ -367,11 +367,11 @@
             .tarjeta.color-acento-contenido.p-3.d-inline-block.rounded-3.mb-4
               h4.mb-0 c ) Operadores de desigualdad  
             .tabla-a.color-acento-botones.mb-5
-              table
+              table.w-60
                 thead
                   tr(style="background-color: #ffce00 ")
                     th(style="color: #12263f") Operador
-                    th(style="color: #12263f") Descripción
+                    th(style="color: #12263f ") Descripción
                 tbody.bg-white
                   tr
                     td(style=" color: #12263f") <= 
@@ -567,7 +567,7 @@
         .tarjeta.tarjeta--bgSlyde.p-4(data-aos="fade-left")
           SlyderA(tipo="b")
             .row.justify-content-center.align-items-center.p-2
-              .col-lg-5.col-md-auto
+              .col-lg-8.col-md-auto
                 p Se desea saber cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017. Las llamadas entrantes son aquellas que no provienen de una extensión local, es decir, el origen tiene más de tres dígitos. 
                   br
                   br
@@ -578,10 +578,9 @@
                   | #[b.text-color-acento-contenido WHERE LENGTH(origen) > 3 AND YEAR(registro) = 2017 ]
                   br
                   | #[b.text-color-acento-contenido GROUP BY mes ]  
-              .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/56.png', alt='')      
+                  
             .row.justify-content-center.align-items-center.p-2
-              .col-lg-5.col-md-auto
+              .col-lg-8.col-md-auto
                 p Pero si se desea mostrar también la agrupación de los años 2017, 2018 y 2019 y los meses de cada uno de estos años, sería:  
                   br
                   br
@@ -596,10 +595,9 @@
                   | #[b.text-color-acento-contenido ORDER BY año, mes  ]
 
 
-              .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/57.png', alt='')      
+                  
             .row.justify-content-center.align-items-center.p-2
-              .col-lg-5.col-md-auto
+              .col-lg-8.col-md-auto
                 p Es de resaltar que para agregar más de una opción en el año, se usó la cláusula IN y se ordena por año y como segundo criterio por mes. 
                   br
                   br
@@ -614,8 +612,7 @@
                   | #[b.text-color-acento-contenido ORDER BY año, mes ] 
 
 
-              .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/58.png', alt='')      
+                  
 
 
 

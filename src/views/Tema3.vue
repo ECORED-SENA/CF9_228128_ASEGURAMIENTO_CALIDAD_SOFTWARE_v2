@@ -11,8 +11,8 @@
         br
         |#[b A continuación, se creará una tabla con la que seguiremos ejemplificando la sintaxis del SQL:]  
     .row.justify-content-center.mb-5
-      .col-lg-7.col-6.mb-lg-0.mb-3: img(src='@/assets/curso/temas/9.png', alt='')
-      .col-lg-5: img(src='@/assets/curso/temas/10.svg', alt='')
+      .col-lg-7.col-10.mb-lg-0.mb-3: img(src='@/assets/curso/temas/9.png', alt='')
+      .col-lg-5.col-6: img(src='@/assets/curso/temas/10.svg', alt='')
     Separador 
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1 Inserción de registros 
@@ -54,7 +54,7 @@
     p.mb-5(data-aos='fade-right') Tenemos la posibilidad de cambiar valores de las filas de una tabla utilizando la sentencia #[b #[em  UPDATE]]. En su manera más fácil, los cambios se usan a cada una de las filas, y a las columnas que se les especifique (MySQL 8.0 Reference Manual, 2021). 
     p.mb-5(data-aos='fade-right') Tenemos la posibilidad de cambiar valores de las filas de una tabla utilizando la sentencia #[b #[em UPDATE.]] En su manera más fácil, los cambios se usan a cada una de las filas, y a las columnas que se les especifique (MySQL 8.0 Reference Manual, 2021). 
     .row.justify-content-center.mb-5
-      .col-lg-5.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/16.png', alt='')
+      .col-lg-5.col-12.mb-lg-0.mb-3: img(src='@/assets/curso/temas/16.png', alt='')
       .col-lg-5.col-7: img(src='@/assets/curso/temas/17.png', alt='')
     p.mb-5(data-aos='fade-right').fw-bold Estudiemos el siguiente ejemplo:
     .bg-img-1.bg-full.mb-5(data-aos="zoom-in")
@@ -93,7 +93,7 @@
                       img(src='@/assets/curso/temas/20.png', alt='')
     p.mb-5.fw-bold(data-aos='fade-right') Otro ejemplo sería que se actualice la fecha al día 2012-12-12 para todos lo que sean mayores de 40 años de edad; esto se podría hacer así: 
     .row.justify-content-center.mb-5
-      .col-lg-8.col-7: img(src='@/assets/curso/temas/21.png', alt='')
+      .col-lg-8.col-10: img(src='@/assets/curso/temas/21.png', alt='')
     Separador
     #t_3_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.3 Borrado de registros 
@@ -109,7 +109,7 @@
         .col-lg-6.col-8
           img(src='@/assets/curso/temas/24.png', alt='').mb-2
           figcaption  Nota. Tomado de MySQL 8.0 Reference Manual (2021). 
-      .tarjeta.color-acento-contenido.p-4.d-inline-block.rounded-3.mb-4
+      .tarjeta.color-acento-contenido.p-2.d-inline-block.rounded-3.mb-4.icono-tres
         h5.mb-0 Vaciar una tabla
       p.mb-5(data-aos='fade-right') Cuando se deseen borrar todas las filas de una tabla, se puede utilizar una sentencia #[em #[b DELETE]] sin condiciones, como se vio en el punto anterior. Pero existe una sentencia alternativa, #[em #[b TRUNCATE]], que hace la misma tarea de una forma mucho más veloz. La diferencia es que #[em #[b DELETE]] hace un borrado secuencial de la tabla, fila por fila y  #[em #[b TRUNCATE]] elimina la tabla y la vuelve a crear desocupada, lo que es mucho más eficaz. 
       .row.justify-content-center.mb-5

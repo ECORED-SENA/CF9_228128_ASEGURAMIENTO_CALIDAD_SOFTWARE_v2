@@ -80,7 +80,7 @@
 
         .row
           .col-lg-8.col
-            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/CREATETABLE.pdf')" target="_blank")
               .anexo__icono
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
@@ -211,36 +211,70 @@
         figure
           img.img-a.img-t(src='@/assets/curso/temas/2-11.png') 
 
+    .fondo-t3.mn.p-5
+      .row.justify-content-center.mb-5
+        .col-xl-8
+          p.mb-3 #[strong Ejemplo]
+          figure
+            img.img-a.img-t(src='@/assets/curso/temas/2-12.png') 
 
-    .row.justify-content-center.mb-5
-      .col-xl-8
-        p.mb-3 #[strong Ejemplo]
-        figure
-          img.img-a.img-t(src='@/assets/curso/temas/2-12.png') 
+      p.mb-5 Si se pretende borrar una fila de #[strong personas3] con cierto valor de #[strong id_persona], se provocará un error si existen filas en la tabla #[strong telefonos3] en la columna #[strong persona_id] con mismo valor. La fila de #[strong personas3] no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla teléfonos3, lo anterior debió que se ha definido restricción #[strong DELETE RESTRICT]. 
 
-    p.mb-5 Si se pretende borrar una fila de #[strong personas3] con cierto valor de #[strong id_persona], se provocará un error si existen filas en la tabla #[strong telefonos3] en la columna #[strong persona_id] con mismo valor. La fila de #[strong personas3] no será eliminada, a menos que previamente se eliminen las filas que tienen el mismo valor de clave foránea en la tabla teléfonos3, lo anterior debió que se ha definido restricción #[strong DELETE RESTRICT]. 
+      .row.justify-content-center.mb-5
+        .col-xl-10
+          div(style="background-color: #BAE9D9").p-4.rounded-3
+            p.mb-0 Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor #[strong InnoDB] para que las reglas de restricción de integridad apliquen:
 
-    .row.justify-content-center.mb-5
-      .col-xl-10
-        div(style="background-color: #BAE9D9").p-4.rounded-3
-          p.mb-0 Miremos otra variante de la misma sintaxis definiendo explícitamente que se usará el motor #[strong InnoDB] para que las reglas de restricción de integridad apliquen:
+      p Observe los datos de las tablas #[strong personas3] y #[strong telefonos3]:  
 
-    p Observe los datos de las tablas #[strong personas3] y #[strong telefonos3]:  
+      .row.justify-content-center.mb-5
+        .col-xl-10
 
-    .row.justify-content-center.mb-5
-      .col-xl-10
+          .row        
+            .col-xl-6
+              figure
+                img.img-a.img-t(src='@/assets/curso/temas/2-13.png') 
 
-        .row        
-          .col-xl-6
-            figure
-              img.img-a.img-t(src='@/assets/curso/temas/2-13.png') 
+            .col-xl-6
+              figure
+                img.img-a.img-t(src='@/assets/curso/temas/2-14.png') 
 
-          .col-xl-6
-            figure
-              img.img-a.img-t(src='@/assets/curso/temas/2-14.png') 
-
-    p Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 'teléfonos3' con el valor 1 en la columna 'persona_id'. Sí será posible borrar la fila correspondiente a "Menganito", debido a que no existe fila alguna en la tabla 'telefonos3' con el valor 2 en la columna 'persona_id'. Si alteramos el valor de 'id_persona' en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 'persona_id' de las filas 3ª y 6ª de la tabla 'telefonos3': 
-
+      p Si se intenta borrar la fila correspondiente a "Fulanito" se provocará un error, debido a que hay dos filas en 'teléfonos3' con el valor 1 en la columna 'persona_id'. Sí será posible borrar la fila correspondiente a "Menganito", debido a que no existe fila alguna en la tabla 'telefonos3' con el valor 2 en la columna 'persona_id'. Si alteramos el valor de 'id_persona' en la fila conveniente a "Tulanito", por el valor 3, por ejemplo, se determinará el valor 3 a la columna 'persona_id' de las filas 3ª y 6ª de la tabla 'telefonos3': 
+    Separador
+    #t_2_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 2.3 Mostrar y eliminar tablas y bases de datos 
+    p.mb-5(data-aos='fade-right') De vez en cuando es preciso eliminar una tabla, sea porque es más fácil crearla de nuevo que alterarla, o porque ya es prescindible. 
+    .row.justify-content-center.align-items-center.mb-5
+      .col-lg-5.mb-lg-0.mb-3
+        .tarjeta.color-acento-contenido.p-4 
+          p.mb-0 Para borrar una tabla se usará la sentencia #[b #[em DROP TABLE.]] 
+      .col-lg-5
+        p.mb-0 Se pueden agregar las palabras IF EXISTS para impedir errores si la tabla a eliminar no existe.
+    .fondo-t3.mn.p-5
+      .row.justify-content-center.align-items-center.mb-5
+        .col-lg-5.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/2-15.png', alt='')
+        .col-lg-5.col-7: img(src='@/assets/curso/temas/2-16.png', alt='')
+      .row.justify-content-center.mb-5
+        .col-lg-10
+          .tarjeta(style="background-color: #bae9d9 ").p-4
+            p.mb-0 De manera similar, se puede borrar bases de datos enteras, utilizando la sentencia #[em #[b DROP DATABASE.]] La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, se creará una tabla y se borrará la base de datos. 
+      .row.justify-content-center.mb-5
+        .col-lg-8
+          img(src='@/assets/curso/temas/2-17.png', alt='')
+          figcaption Nota. MySQL 8.0 Reference Manual (2021). 
+      .tarjeta(style="background-color: #273a89 ").p-3.px-5.mb-5
+        .row.justify-content-around.align-items-center
+          .col-3.col-sm-2.col-lg-1
+            img(src="@/assets/curso/temas/2-18.svg")
+          .col
+            .row.justify-content-between.align-items-center
+              .col-10.mb-3.mb-sm-0
+                h3.mb-1.text-white Ejercicios prácticos
+                p.text-small.text-white Lo invitamos a estudiar dos ejercicios que están en el documento anexo “Ejercicios Prácticos”. Ellos  recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos son más próximos a problemas de la vida real. 
+              .col.mb-3.mb-sm-0
+                a.boton.color-acento-botones(:href="obtenerLink('downloads/ejerciciospracticos.pdf')" target="_blank" type="application/pdf")
+                  span(style="color: #12263f") Descargar 
+                  i.fas.fa-file-download(style="color: #12263f")
     
 </template>
 
