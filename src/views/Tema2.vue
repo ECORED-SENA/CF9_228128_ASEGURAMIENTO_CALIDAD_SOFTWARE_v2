@@ -80,7 +80,7 @@
 
         .row
           .col-lg-8.col
-            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/CREATETABLE.pdf')" target="_blank")
+            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/anexo_createtable.pdf')" target="_blank")
               .anexo__icono
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto

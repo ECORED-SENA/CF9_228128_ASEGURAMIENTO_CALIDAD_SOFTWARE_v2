@@ -154,13 +154,9 @@
 
 
               .col-lg-5.mb-4.mb-md-0
-                SlyderA(tipo="b") 
-                  div 
-                    img(src='@/assets/curso/temas/38.png', alt='')            
-                  div 
-                    img(src='@/assets/curso/temas/39.png', alt='')            
-                  div 
-                    img(src='@/assets/curso/temas/40.png', alt='')            
+                  figure 
+                    img(src='@/assets/curso/temas/38b.png', alt='')            
+         
                 
     ModalA(:abrir-modal.sync="modal1")
       .tabla-a.color-acento-botones.mb-5
