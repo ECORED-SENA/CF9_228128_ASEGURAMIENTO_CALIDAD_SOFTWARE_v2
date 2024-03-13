@@ -80,7 +80,7 @@
 
         .row
           .col-lg-8.col
-            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/anexo_createtable.pdf')" target="_blank")
+            a.anexo.bg-color-acento-botones.mb-4(:href="obtenerLink('/downloads/Anexo_Create_Table.pdf')" target="_blank")
               .anexo__icono
                 img(src="@/assets/template/icono-pdf.svg")
               .anexo__texto
@@ -272,7 +272,7 @@
                 h3.mb-1.text-white Ejercicios prácticos
                 p.text-small.text-white Lo invitamos a estudiar dos ejercicios que están en el documento anexo “Ejercicios Prácticos”. Ellos  recogen la temática hasta ahora vista, con la diferencia que los ejercicios propuestos son más próximos a problemas de la vida real. 
               .col.mb-3.mb-sm-0
-                a.boton.color-acento-botones(:href="obtenerLink('downloads/ejerciciospracticos.pdf')" target="_blank" type="application/pdf")
+                a.boton.color-acento-botones(:href="obtenerLink('downloads/Anexo_EjerciciosPracticos.pdf')" target="_blank" type="application/pdf")
                   span(style="color: #12263f") Descargar 
                   i.fas.fa-file-download(style="color: #12263f")
     
