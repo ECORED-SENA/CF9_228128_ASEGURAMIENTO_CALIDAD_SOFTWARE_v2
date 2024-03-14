@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="72.399" height="36.199" viewBox="0 0 72.399 36.199">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_382554" data-name="Rectángulo 382554" width="72.399" height="36.199" transform="translate(0 0.001)" fill="#273a89"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectángulo_382555" data-name="Rectángulo 382555" width="72.399" height="36.199" transform="translate(0 0.001)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_1073289" data-name="Grupo 1073289" transform="translate(0 0)">
+    <g id="Grupo_1073286" data-name="Grupo 1073286">
+      <g id="Grupo_1073285" data-name="Grupo 1073285" clip-path="url(#clip-path)">
+        <path id="Trazado_820979" data-name="Trazado 820979" d="M63.318,36.2H9.081A9.081,9.081,0,0,1,0,27.119V9.082A9.082,9.082,0,0,1,9.081,0H63.318A9.082,9.082,0,0,1,72.4,9.082V27.119A9.081,9.081,0,0,1,63.318,36.2" fill="#273a89"/>
+      </g>
+    </g>
+    <g id="Grupo_1073288" data-name="Grupo 1073288">
+      <g id="Grupo_1073287" data-name="Grupo 1073287" clip-path="url(#clip-path-2)">
+        <text id="_" data-name="&lt;/&gt;" transform="translate(15.313 26.156)" fill="#fff" font-size="25" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="0" y="0">&lt;/&gt;</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

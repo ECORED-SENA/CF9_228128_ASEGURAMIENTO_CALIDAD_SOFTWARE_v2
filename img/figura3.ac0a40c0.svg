@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="505" height="307" viewBox="0 0 505 307">
+  <g id="Grupo_1073295" data-name="Grupo 1073295" transform="translate(-180 -2768)">
+    <g id="Grupo_1073294" data-name="Grupo 1073294" transform="translate(-210 1011)">
+      <rect id="Rectángulo_382557" data-name="Rectángulo 382557" width="505" height="75" rx="8" transform="translate(390 1757)" fill="#273a89"/>
+      <path id="Rectángulo_382556" data-name="Rectángulo 382556" d="M0,0H505a0,0,0,0,1,0,0V264a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V0A0,0,0,0,1,0,0Z" transform="translate(390 1792)"/>
+      <circle id="Elipse_9768" data-name="Elipse 9768" cx="4.5" cy="4.5" r="4.5" transform="translate(411 1770)" fill="#ff1212"/>
+      <circle id="Elipse_9769" data-name="Elipse 9769" cx="4.5" cy="4.5" r="4.5" transform="translate(424 1770)" fill="#ffce00"/>
+      <ellipse id="Elipse_9770" data-name="Elipse 9770" cx="4" cy="4.5" rx="4" ry="4.5" transform="translate(438 1770)" fill="#3ee2a8"/>
+    </g>
+    <text id="mysql_SELECT_VERSION_CURRENT_DATE_VERSION_CURRENT_DATE_8.0.25_2021-06-12_1_row_in_set_0.02_sec_mysql_" data-name="mysql&gt; SELECT VERSION (), CURRENT_DATE; 
++—————+———————+ 
+| VERSION () | CURRENT_DATE | 
++—————+———————+ 
+| 8.0.25    | 2021-06-12   | 
++—————+———————+ 
+1 row in set (0.02 sec) 
+mysql&gt; " transform="translate(217 2839)" fill="#fff" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">mysql&gt; SELECT VERSION (), CURRENT_DATE; </tspan><tspan x="0" y="39">+—————+———————+ </tspan><tspan x="0" y="63">| VERSION () | CURRENT_DATE | </tspan><tspan x="0" y="87">+—————+———————+ </tspan><tspan x="0" y="111" xml:space="preserve">| 8.0.25    | 2021-06-12   | </tspan><tspan x="0" y="135">+—————+———————+ </tspan><tspan x="0" y="159">1 row in set (0.02 sec) </tspan><tspan x="0" y="183">mysql&gt; </tspan></text>
+  </g>
+</svg>

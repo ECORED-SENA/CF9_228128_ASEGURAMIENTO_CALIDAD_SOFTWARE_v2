@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="439" viewBox="0 0 820 439">
+  <g id="Grupo_1073297" data-name="Grupo 1073297" transform="translate(-390 -1736)">
+    <g id="Grupo_1073291" data-name="Grupo 1073291" transform="translate(0 -21)">
+      <rect id="Rectángulo_382557" data-name="Rectángulo 382557" width="820" height="75" rx="8" transform="translate(390 1757)" fill="#273a89"/>
+      <path id="Rectángulo_382556" data-name="Rectángulo 382556" d="M0,0H820a0,0,0,0,1,0,0V396a8,8,0,0,1-8,8H8a8,8,0,0,1-8-8V0A0,0,0,0,1,0,0Z" transform="translate(390 1792)"/>
+      <circle id="Elipse_9768" data-name="Elipse 9768" cx="4.5" cy="4.5" r="4.5" transform="translate(411 1770)" fill="#ff1212"/>
+      <circle id="Elipse_9769" data-name="Elipse 9769" cx="4.5" cy="4.5" r="4.5" transform="translate(424 1770)" fill="#ffce00"/>
+      <ellipse id="Elipse_9770" data-name="Elipse 9770" cx="4" cy="4.5" rx="4" ry="4.5" transform="translate(438 1770)" fill="#3ee2a8"/>
+    </g>
+    <text id="Enter_password:_Welcome_to_the_MySQL_monitor._Commands_end_with_or_g._Your_MySQL_connection_id_is_90_Server_version:_8.0.25_MySQL_Community_Server_-_GPL_Copyright_c_2000_2021_Oracle_and_or_its_affiliates._Oracle_is_a_registered_trade" data-name="Enter password: ***********
+Welcome to the MySQL monitor.  Commands end with; or \g.
+Your MySQL connection id is 90
+Server version: 8.0.25 MySQL Community Server - GPL
+
+ Copyright (c) 2000, 2021, Oracle and/or its affiliates.
+
+ Oracle is a registered trade" transform="translate(427 1807)" fill="#fff" font-size="16" font-family="Roboto-Regular, Roboto"><tspan x="0" y="15">Enter password: ***********</tspan><tspan x="0" y="39" xml:space="preserve">Welcome to the MySQL monitor.  Commands end with; or \g.</tspan><tspan x="0" y="63">Your MySQL connection id is 90</tspan><tspan x="0" y="87">Server version: 8.0.25 MySQL Community Server - GPL</tspan><tspan x="0" y="111"></tspan><tspan x="0" y="135" xml:space="preserve"> Copyright (c) 2000, 2021, Oracle and/or its affiliates.</tspan><tspan x="0" y="159"></tspan><tspan x="0" y="183" xml:space="preserve"> Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be </tspan><tspan x="0" y="207">trademarks of their respective owners.</tspan><tspan x="0" y="231"></tspan><tspan x="0" y="255" xml:space="preserve"> Type &apos;help;&apos; or &apos;\h&apos; for help. Type &apos;\c&apos; to clear the current input statement.</tspan><tspan x="0" y="279"></tspan><tspan x="0" y="303" xml:space="preserve"> mysql&gt;</tspan></text>
+  </g>
+</svg>

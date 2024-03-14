@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="174" height="142" viewBox="0 0 174 142">
+  <g id="_59" data-name="59" transform="translate(-180 -397)">
+    <rect id="Rectángulo_382993" data-name="Rectángulo 382993" width="174" height="142" rx="8" transform="translate(180 397)" fill="#ffce00"/>
+    <rect id="Rectángulo_382994" data-name="Rectángulo 382994" width="48" height="22" rx="4" transform="translate(203 458)" fill="#273a89"/>
+    <rect id="Rectángulo_382995" data-name="Rectángulo 382995" width="35" height="21" rx="6" transform="translate(281 414)" fill="#1682fb"/>
+    <path id="Trazado_824443" data-name="Trazado 824443" d="M1.156,0V-11.375H4.516a5.269,5.269,0,0,1,2.676.672A4.581,4.581,0,0,1,9-8.8a6.051,6.051,0,0,1,.641,2.828v.57A6.026,6.026,0,0,1,9-2.555,4.526,4.526,0,0,1,7.16-.664,5.513,5.513,0,0,1,4.43,0ZM3.133-9.781v8.2H4.422a2.968,2.968,0,0,0,2.387-.973,4.237,4.237,0,0,0,.848-2.793v-.633a4.347,4.347,0,0,0-.8-2.828,2.853,2.853,0,0,0-2.336-.977Zm11.039-1.594,3.281,8.719,3.273-8.719h2.555V0H21.313V-3.75l.2-5.016L18.148,0H16.734L13.383-8.758l.2,5.008V0H11.609V-11.375Zm13.422,9.8h5.164V0H25.617V-11.375h1.977Z" transform="translate(211 474)" fill="#fff"/>
+    <path id="Trazado_824428" data-name="Trazado 824428" d="M10626-11229.2l34.141-38.111" transform="translate(-10377.829 11700)" fill="none" stroke="#273a89" stroke-width="2"/>
+    <path id="Trazado_824429" data-name="Trazado 824429" d="M0,34.124,38.129,0" transform="translate(282.303 470.8) rotate(90)" fill="none" stroke="#273a89" stroke-width="2"/>
+    <rect id="Rectángulo_382998" data-name="Rectángulo 382998" width="35" height="21" rx="6" transform="translate(281 501)" fill="#1682fb"/>
+    <path id="Trazado_824430" data-name="Trazado 824430" d="M10626-11229.2l32.394-15.728" transform="translate(-10376.012 11700)" fill="none" stroke="#273a89" stroke-width="2"/>
+    <path id="Trazado_824431" data-name="Trazado 824431" d="M.852,14.876,34.412,1.969" transform="translate(259.672 459.577) rotate(45)" fill="none" stroke="#273a89" stroke-width="2"/>
+    <rect id="Rectángulo_382996" data-name="Rectángulo 382996" width="35" height="21" rx="6" transform="translate(281 443)" fill="#1682fb"/>
+    <rect id="Rectángulo_382997" data-name="Rectángulo 382997" width="35" height="21" rx="6" transform="translate(281 472)" fill="#1682fb"/>
+  </g>
+</svg>
