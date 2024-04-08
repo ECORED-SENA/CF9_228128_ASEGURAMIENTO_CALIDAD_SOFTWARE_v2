@@ -136,7 +136,7 @@
               .p-2
                 h5.text-center.mb-0 DDL + DML
 
-            p En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. Ya no se empleará (por ahora), MySQL Workbeach, y se observarán las particularidades específicas de MySQL. 
+            p En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. Ya no se empleará (por ahora), MySQL Workbench, y se observarán las particularidades específicas de MySQL. 
               
 </template>
 

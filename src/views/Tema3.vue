@@ -16,7 +16,7 @@
     Separador 
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1 Inserción de registros 
-    p.mb-5(data-aos='fade-right') La forma más directa de implantar una fila nueva en una tabla es por medio de una sentenci INSERT. 
+    p.mb-5(data-aos='fade-right') La forma más directa de implantar una fila nueva en una tabla es por medio de una sentencia INSERT. 
     .bg-img-1.bg-full.mb-5(data-aos="zoom-in")
       .bg-container-full
         .tarjeta.tarjeta--bgSlyde.p-4(data-aos="fade-left")
@@ -52,7 +52,6 @@
     #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.2 Edición de registros
     p.mb-5(data-aos='fade-right') Tenemos la posibilidad de cambiar valores de las filas de una tabla utilizando la sentencia #[b #[em  UPDATE]]. En su manera más fácil, los cambios se usan a cada una de las filas, y a las columnas que se les especifique (MySQL 8.0 Reference Manual, 2021). 
-    p.mb-5(data-aos='fade-right') Tenemos la posibilidad de cambiar valores de las filas de una tabla utilizando la sentencia #[b #[em UPDATE.]] En su manera más fácil, los cambios se usan a cada una de las filas, y a las columnas que se les especifique (MySQL 8.0 Reference Manual, 2021). 
     .row.justify-content-center.mb-5
       .col-lg-5.col-12.mb-lg-0.mb-3: img(src='@/assets/curso/temas/16.png', alt='')
       .col-lg-5.col-7: img(src='@/assets/curso/temas/17.png', alt='')

@@ -165,7 +165,7 @@
 
         p Es necesario que la columna que posee una definición de clave foránea esté indexada #[strong KEY(numero)]. Sin embargo, esto no debe de generar preocupación, porque si no se hace de forma clara, MySQL lo hará de forma implícita. 
 
-        p.mb-5 Dicha forma precisa una clave foránea en la columna #[strong persona_id], La cual hace referencia a la columna id_persona de la tabla personas2 #[strong (FOREIGN KEY (persona_id) REFERENCES personas2)]. #[span.etiqueta La definición contiene las tareas a efectuar cuando se excluya una fila en la tabla #[strong personas2].] 
+        p.mb-5 Dicha forma precisa una clave foránea en la columna #[strong persona_id], la cual hace referencia a la columna id_persona de la tabla personas2 #[strong (FOREIGN KEY (persona_id) REFERENCES personas2)]. #[span.etiqueta La definición contiene las tareas a efectuar cuando se excluya una fila en la tabla #[strong personas2].] 
 
         .row.justify-content-center 
           .col-xl-9
@@ -199,7 +199,7 @@
             p Borrar o modificar una clave en una fila en la tabla referenciada con un valor fijo de clave, conlleva borrar las filas con el mismo valor de clave foránea o cambiar los valores de esas claves foráneas.  
 
           .row(titulo="SET NULL ")
-            p Borrar o editar una clave en una fila en la tabla referenciada con un valor fijo de clave, involucra determinar el valor NULL a las claves foráneas con el mismo valor.
+            p Borrar o editar una clave en una fila en la tabla referenciada con un valor fijo de clave, involucra determinar el valor #[em NULL] a las claves foráneas con el mismo valor.
           
           .row(titulo="NO ACTION ")
             p Las claves foráneas no se alteran, ni se eliminan filas en la tabla que las contiene. 

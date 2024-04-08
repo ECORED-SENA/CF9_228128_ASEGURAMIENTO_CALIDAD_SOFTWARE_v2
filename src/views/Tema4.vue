@@ -11,14 +11,14 @@
         .col-lg-3.col-6: img(src='@/assets/curso/temas/27.png', alt='' style="z-index: 1").position-relative
         .col-lg-9
           .bg-white.p-4(style="margin-left: -3rem; z-index: -1")
-            p.mb-0.ms-4 Para encontrar la información dentro de una base de datos, es preciso escudriñar dentro de la estructura de los datos su estructura y su naturaleza, por ejemplo, el tipo de datos fecha tiene una estructura YYYY-MM-DD,  y si necesito listar los registros de un año determinado, se necesita una función que refiera a ese dato particular dentro de la columna; por este motivo se necesita revisar algunas funciones antes de empezar a trabajar consultas de datos. 
+            p.mb-0.ms-4 Para encontrar la información dentro de una base de datos, es preciso escudriñar dentro de la estructura de los datos su estructura y su naturaleza, por ejemplo, el tipo de datos fecha tiene una estructura YYYY-MM-DD,  y si necesito listar los registros de un año determinado, se necesita una función que refiera a ese dato particular dentro de la columna; por este motivo, es necesario revisar algunas funciones antes de empezar a trabajar consultas de datos. 
     Separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.1 Funciones en MySQL
-    p.mb-5(data-aos='fade-right') Considerando que MySQL es rico en lo que respecta a operadores y en lo que se refiere a funciones es también muy amplio, MySQL dispone de multitud de funciones. Solo se explicarán algunas funciones necesarias para entender cómo funcionan en general. 
+    p.mb-5(data-aos='fade-right') Dado que MySQL cuenta con una amplia gama de operadores y ofrece un extenso repertorio de funciones, se dispone de numerosas opciones para el manejo de datos. Sin embargo, para facilitar la comprensión de su funcionamiento general, solo se explicarán algunas funciones esenciales.
       br
       br
-      | #[b A continuación, se listarán las que se usarán para el ejemplo que sigue:]
+      | #[b A continuación, se listan algunas de las más usadas:]
     .row.justify-content-center.mb-5
       .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
@@ -26,7 +26,6 @@
           span Algunas funciones de MySQL 
         .tabla-a.color-acento-botones.mb-5
           table
-            caption Leyenda de la tabla
             thead.border-top-0
               tr(style="background-color: #ffce00 ")
                 th Función
@@ -50,6 +49,29 @@
               tr
                 td COUNT 
                 td Devuelve el número de registros devueltos por una consulta de selección. 
+
+              tr
+                td AVG 
+                td Devuelve el valor medio de una expresión.
+              tr
+                td YEAR  
+                td Devuelve la parte del año para una fecha determinada.
+              tr
+                td MONTH 
+                td Devuelve la parte del mes para una fecha determinada.
+              tr
+                td DAY 
+                td Devuelve el día del mes para una fecha determinada.
+              tr
+                td DATE 
+                td Extrae la parte de la fecha de una expresión de fecha y hora.
+              tr
+                td TIME 
+                td Extrae la parte de tiempo de una hora / fecha y hora determinadas.
+              tr
+                td SEC_TO_TIME 
+                td Devuelve un valor de tiempo basado en los segundos especificados.
+                
     p.mb-5(data-aos='fade-right') Para este ejemplo se usará una base de datos de llamadas telefónicas, esta base de datos tiene la estructura que se verá a continuación y con ella se aprenderá a hacer consultas. 
       br  
       br  
@@ -76,7 +98,7 @@
                 img(src='@/assets/curso/temas/29.png', alt='')            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
-                p A partir de este punto usaremos #[b.text-color-acento-contenido #[b MySQL WorkBeach]] para visualizar mejor los resultados. 
+                p A partir de este punto usaremos #[b.text-color-acento-contenido #[b MySQL Workbench]] para visualizar mejor los resultados. 
                 ol.lista-ol
                   li.d-flex.mb-0
                     span.text-bold(style="color: #ffce00") 1. 
@@ -96,19 +118,14 @@
                   li.d-flex.mb-0
                     span.text-bold(style="color: #ffce00") 6. 
                     p.mb-0  Haga clic en ok. 
-              .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/30.png', alt='')            
+              .col-lg-7.mb-4.mb-md-0
+                img(src='@/assets/curso/temas/30b.png', alt='')            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Ahora debe conectar dando doble clic.
               .col-lg-5.mb-4.mb-md-0
-                SlyderA(tipo="b") 
-                  div 
-                    img(src='@/assets/curso/temas/31.png', alt='')            
-                  div 
-                    img(src='@/assets/curso/temas/32.png', alt='')            
-                  div 
-                    img(src='@/assets/curso/temas/33.png', alt='')            
+                img(src='@/assets/curso/temas/31b.png', alt='')   
+        
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p  Ya se dispone de bases de datos y se sabe cómo agregar y cambiar datos. A continuación se aprenderá a extraer datos de una base de datos. Para ello se volverá a utilizar la sentencia #[b.text-color-acento-contenido #[em SELECT]]. 
@@ -124,7 +141,7 @@
                   br
                   |Escriba la sentencia anterior. Al decir *  estamos diciendo que seleccione todas las columnas de la tabla cdr: 
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/35.png', alt='')            
+                img(src='@/assets/curso/temas/35b.png', alt='')            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p También se pueden seleccionar solo algunas, para esto, se deben separar por una coma, así:  
@@ -132,7 +149,7 @@
                   br
                   | #[b.text-color-acento-contenido #[em SELECT origen, destino, duracion FROM cdr ]]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/36.png', alt='')            
+                img(src='@/assets/curso/temas/36b.png', alt='')            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Cabe mencionar que es posible asignar un alias a cualquiera de las expresiones #[b.text-color-acento-contenido #[em SELECT]] y se puede realizar empleando la palabra AS ,aunque esta palabra es opcional: 
@@ -142,7 +159,7 @@
 
 
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/37.png', alt='')            
+                img(src='@/assets/curso/temas/37b.png', alt='')            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Suponga que se necesita saber cuánto cobrar por las llamadas salientes realizadas a celular o larga distancia nacional (que el destino tenga 10 dígitos), sabiendo que el valor del minuto son $85 (ochenta y cinco pesos): 
