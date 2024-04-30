@@ -23,7 +23,7 @@
                 figure.mb-2.mt-4.mb-lg-0
                   img(src="@/assets/curso/intro/3.png")
               .col-lg.col-md-12.col-12.p-0.p-lg-4(style="place-self:center;" data-aos="fade-left")
-                p.mb-0.pt-4 #[span.etiqueta Las siglas SQL, vienen del inglés Structured Query Language], es un lenguaje estándar que permite manipular los datos de una base de datos relacional. Casi todos los Sistemas de Gestión de Bases de Datos Relacionales (SGBD) implementan este lenguaje y mediante él se realiza todo tipo de actividad en la base de datos. En este componente formativo, se hace una presentación del lenguaje SQL, enfocándose en las sentencias de consulta de datos, empleando la interfaz de consola de línea de comandos, con el fin de fortalecer las técnicas de administración remota. Finalmente, se presentará la interfaz de administración gráfica para hacer las mismas operaciones. 
+                p.mb-0.pt-4 #[span.etiqueta.me-0 Las siglas SQL, vienen del inglés Structured Query Language], es un lenguaje estándar que permite manipular los datos de una base de datos relacional. Casi todos los Sistemas de Gestión de Bases de Datos Relacionales (SGBD) implementan este lenguaje y mediante él se realiza todo tipo de actividad en la base de datos. En este componente formativo, se hace una presentación del lenguaje SQL, enfocándose en las sentencias de consulta de datos, empleando la interfaz de consola de línea de comandos, con el fin de fortalecer las técnicas de administración remota. Finalmente, se presentará la interfaz de administración gráfica para hacer las mismas operaciones. 
 
   </template>
 

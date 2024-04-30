@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 1
-      h1 Interface de línea de comandos de MySQL 
+      h1 #[em Interface] de línea de comandos de MySQL 
       
     .row.justify-content-center.align-items-center.bg11.px-3.py-4(data-aos="fade-left")
       .col-lg-12
@@ -13,16 +13,16 @@
           .col-lg-auto.col-md-12.mb-lg-0.mb-3
             img(data-aos="zoom-in")(src='@/assets/curso/temas/1.png', style="max-width: 287px").mx-auto  
           .col-lg(data-aos="fade-down") 
-            p(data-aos="fade-down").pt-md-3.pt-lg-0 Al iniciar a trabajar con el SGBD, existen varias maneras de enlazar una comunicación con el servidor de MySQL. Generalmente en el software, se usará un API para hacer las consultas y otras operaciones con el servidor. Por ejemplo, en PHP, esta API está integrada con el lenguaje. 
+            p(data-aos="fade-down").pt-md-3.pt-lg-0 Al iniciar a trabajar con el SGBD, existen varias maneras de enlazar una comunicación con el servidor de MySQL. Generalmente en el #[em software], se usará una API para hacer las consultas y otras operaciones con el servidor. Por ejemplo, en PHP, esta API está integrada con el lenguaje. 
 
-            p(data-aos="fade-down") En este punto se usará MySQL de forma directa, por medio de un cliente ejecutándose desde una consola (una ventana de comandos en Windows). En otras secciones se explicarán las distintas APIs.   
+            p(data-aos="fade-down") En este punto se usará MySQL de forma directa, por medio de un cliente ejecutándose desde una consola (una ventana de comandos en Windows). En otras secciones se explicarán las distintas API.   
 
     Separador
 
     #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 1.1 Aplicación cliente de MySQL 
 
-    p(data-aos="fade-left") Primero, se deben seguir las siguientes instrucciones, para conectarse a la base de datos a través del cliente de línea de comandos: 
+    p(data-aos="fade-left") Primero, se deben tener en cuenta las siguientes instrucciones, para conectarse a la base de datos a través del cliente de línea de comandos:
 
     .bg-img-1.bg-full.mb-5(data-aos="zoom-in")
       .bg-container-full
@@ -43,7 +43,7 @@
               .col-xl-10
                 .row.align-items-center.justify-content-center
                   .col-md-6
-                    p Ingresa la contraseña de root usada en el proceso de instalación de MySQL. 
+                    p Ingresa la contraseña de #[em root] usada en el proceso de instalación de MySQL. 
                 
                   .col-md-6
                     figure
@@ -54,7 +54,7 @@
               .col-xl-10
                 .row.align-items-center.justify-content-center
                   .col-md-6
-                    p Una vez autenticado en la interface comando de línea, vemos este resultado.  
+                    p Una vez autenticado en la #[em interface] comando de línea, vemos este resultado.  
                 
                   .col-md-6
                     figure
@@ -69,14 +69,14 @@
                 .col-auto
                   img(src='@/assets/curso/temas/icon1.svg', alt='', style="max-width: 72px")
                 .col
-                  p.mb-0 En adelante, los resultados de interface de línea de comandos se presentarán como se presenta a continuación:  
+                  p.mb-0 En adelante, los resultados de #[em interface] de línea de comandos se presentarán como se presenta a continuación:  
 
             figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura1.svg', alt='')
 
 
             .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
-              p.mb-0 Y, para salir de la consola de comando, se usa el comando quit (en mayúscula o minúscula). 
+              p.mb-0 Y, para salir de la consola de comando, se usa el comando #[em quit](en mayúscula o minúscula). 
 
             figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura2.svg', alt='')
@@ -95,7 +95,7 @@
             figure.mb-4(data-aos="zoom-in")
               img(src='@/assets/curso/temas/figura3.svg', alt='')
           .col-xl-7
-            p(data-aos="fade-left") #[b SELECT] es la sentencia SQL para elegir datos de bases de datos, además se puede utilizar, como en esta situación, para consultar cambiantes del sistema o resultados de funcionalidades. En este caso, se ha consultado el resultado de la función #[b VERSION], se sabe que es una función porque tiene paréntesis” ()”, y de la variable #[b CURRENT_DATE]. 
+            p(data-aos="fade-left") #[b SELECT] es la sentencia SQL para elegir datos de bases de datos, además se puede utilizar, como en esta situación, para consultar cambiantes del sistema o resultados de funcionalidades. En este caso, se ha consultado el resultado de la función #[b VERSION], se sabe que es una función porque tiene paréntesis "()", y de la variable #[b CURRENT_DATE]. 
 
             .bg-color-acento-contenido.p-4.border-radius-default.mb-4(data-aos="fade-left")
               p.mb-0 Toda sentencia debe finalizar con punto y coma (;), luego debe dar #[b enter]. 
@@ -121,7 +121,7 @@
             .p-5.h-100.card2(style="background-color: #273A89")
               img(src='@/assets/curso/temas/icon2.svg', alt='' style="width: 73px").mb-4
               .titulo-card.d-inline-block(style="background-color: #3EE2A8").p-1.px-3.mb-3
-                h4.d-inline-block.mb-0 DML #[em (Data Manipilation Language)]. 
+                h4.d-inline-block.mb-0 DML #[em (Data Manipulation Language)]. 
               p.text-white Es lo que se usa para cambiar y obtener datos desde las bases de datos.
 
         .row.justify-content-center.align-items-center.mb-5

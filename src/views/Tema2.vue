@@ -17,7 +17,7 @@
 
 
     .cajon-b.color-blue-ligth.p-3.mb-5
-      p.mb-0 #[b Es fundamental que mientras se estudia,] se ejecuten las sentencias propuestas aquí de esa manera se consolidarán los conocimientos de cada tema tratado. Se debe tomar el tiempo necesario para escribir en la consola cada una de las sentencias, es un ejercicio fundamental para asimilar el conocimiento que se está adquiriendo. 
+      p.mb-0 #[b Es fundamental que mientras se estudia,] se ejecuten las sentencias propuestas aquí, de esa manera se consolidarán los conocimientos de cada tema tratado. Se debe tomar el tiempo necesario para escribir en la consola cada una de las sentencias, es un ejercicio fundamental para asimilar el conocimiento que se está adquiriendo. 
 
     p.mb-5 De la misma forma, se deben revisar los resultados que le da la ejecución, en caso de algún error en la sintaxis, la respuesta dará una idea de qué puede estar fallando. #[b Ahora, se va  a crear y manejar una base de datos de práctica, a la vez que se familiarice con la manera de trabajar de MySQL]. 
 
@@ -56,7 +56,7 @@
 
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
-                p Para borrar una base de datos, se usa la sentencia #[b.text-color-acento-contenido SQL DROP]. A continuación, se borrará la base de datos prueba, listaremos las existentes y la volveremos a crear:         
+                p Para borrar una base de datos, se usa la sentencia #[b.text-color-acento-contenido SQL DROP]. A continuación, se borrará la base de datos #[strong “prueba”], listaremos las existentes y la volveremos a crear:         
               .col-lg-5.mb-4.mb-md-0
                 img.img-a.img-t(src='@/assets/curso/temas/2-4.png') 
 
