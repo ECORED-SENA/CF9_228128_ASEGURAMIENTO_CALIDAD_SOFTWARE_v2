@@ -82,7 +82,7 @@
           SlyderA(tipo="b")
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
-                p Descargue el archivo para crear la base de datos cdr (recuerde que debe descomprimirlo) y de él extraiga el archivo cdr.sql. Este archivo crea una base de datos llamadas cdr y dentro una tabla con el mismo nombre. 
+                p Descargue el archivo para crear la base de datos #[strong "cdr"] (recuerde que debe descomprimirlo) y de él extraiga el archivo cdr.sql. Este archivo crea una base de datos llamada #[strong "cdr"] y dentro una tabla con el mismo nombre. 
                   br
                   br
                   |Importe el archivo con la sentencia source < ruta del archivo sql >. 
@@ -114,7 +114,7 @@
                     p.mb-0  Ponga el usuario root. 
                   li.d-flex.mb-0
                     span.text-bold(style="color: #ffce00") 5. 
-                    p.mb-0  Digite el nombre de la base de datos que usará: cdr. 
+                    p.mb-0  Digite el nombre de la base de datos que usará: #[strong "cdr"]. 
                   li.d-flex.mb-0
                     span.text-bold(style="color: #ffce00") 6. 
                     p.mb-0  Haga clic en ok. 
@@ -165,7 +165,7 @@
                 p Suponga que se necesita saber cuánto cobrar por las llamadas salientes realizadas a celular o larga distancia nacional (que el destino tenga 10 dígitos), sabiendo que el valor del minuto son $85 (ochenta y cinco pesos): 
                   br
                   br
-                  |Lo primero que se necesita tener en cuenta, es que hay que filtrar las llamadas que tienen un destino de 10 dígitos. Esto se logra con la función #[b.text-color-acento-contenido #[em LENGTH]] y el número de segundos que tiene la llamada desde que es atendida, se guarda en la columna facturar. Pero para saber cuántos minutos duró la llamada, se debe  dividir el número de segundos por 60 y eso nos da el número de minutos. Ahora, el número de minutos no es entero y tiene datos decimales se debe redondear hacia arriba con la función #[b.text-color-acento-contenido #[em CEIL]] y este valor ya redondeado, se puede multiplicar por 85 que es el valor del minuto. 
+                  |Lo primero que se necesita tener en cuenta, es que hay que filtrar las llamadas que tienen un destino de 10 dígitos. Esto se logra con la función #[b.text-color-acento-contenido #[em LENGTH]] y el número de segundos que tiene la llamada desde que es atendida, se guarda en la columna facturar. Pero para saber cuántos minutos duró la llamada, se debe  dividir el número de segundos por 60 y eso nos da el número de minutos. Ahora, el número de minutos no es entero y tiene datos decimales, se debe redondear hacia arriba con la función #[b.text-color-acento-contenido #[em CEIL]] y este valor ya redondeado, se puede multiplicar por 85 que es el valor del minuto. 
 
 
 
@@ -251,7 +251,7 @@
       p.mb-5(data-aos='fade-right').fw-bold Conozcamos algunos operadores:
       TabsB.color-acento-contenido.mb-5
         .py-4.py-md-5.p-5(titulo="Operador AND" :icono="require('@/assets/curso/temas/icon.svg')")
-          p.mb-5(data-aos='fade-right') SQL se puede usar el operador #[em #[b AND]], que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos, falso si cualquier operando es falso o nulo si alguno de los dos es nulo.  
+          p.mb-5(data-aos='fade-right') En SQL se puede usar el operador #[em #[b AND]], que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, solo si ambos operandos son verdaderos, falso si cualquier operando es falso o nulo si alguno de los dos es nulo.  
             br
             br
             |#[b Esto se representa mediante la siguiente tabla de verdad:] 
@@ -304,11 +304,8 @@
                       
             .col-md-6 
               img(src='@/assets/curso/temas/43.png', alt='')
-        .py-4.py-md-5.p-5(titulo="Operador AND" :icono="require('@/assets/curso/temas/icon.svg')")
-          p.mb-5(data-aos='fade-right') SQL este operador también tiene dos formas equivalentes OR  
-            br
-            br
-            |El operador OR también es binario. Si ambos operandos siendo diferentes de #[b #[em NULL]] y el resultado es verdadero si alguno de ellos es verdadero y falso si los dos son falsos. Si uno de los operandos es #[b #[em NULL]] el resultado es verdadero si el otro es verdadero y #[b #[em NULL]] en el si el otro es falso.  
+        .py-4.py-md-5.p-5(titulo="Operador OR" :icono="require('@/assets/curso/temas/icon.svg')")
+          p.mb-5(data-aos='fade-right') El operador OR también es binario. Si ambos operandos siendo diferentes de #[b #[em NULL]] y el resultado es verdadero si alguno de ellos es verdadero y falso si los dos son falsos. Si uno de los operandos es #[b #[em NULL]] el resultado es verdadero si el otro es verdadero y #[b #[em NULL]] si el otro es falso.  
             br
             br
             |La tabla de verdad es: 
@@ -407,7 +404,7 @@
                     
                     
                     
-        .col-lg-6.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/46.png', alt='')
+        .col-lg-6.col-8.mb-lg-0.mb-3: img(src='@/assets/curso/temas/46b.png', alt='', style="max-width: 600px").mx-auto
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.3 Ordenar resultados 
@@ -423,7 +420,7 @@
                   br
                   | #[b.text-color-acento-contenido SELECT * FROM cdr ORDER BY duracion DESC ]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/47.png', alt='')             
+                img(src='@/assets/curso/temas/47b.png', alt='', style="max-width: 505px")             
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Y también de manera ascendente por la fecha:  
@@ -431,7 +428,7 @@
                   br
                   | #[b.text-color-acento-contenido SELECT * FROM cdr ORDER BY registro ASC]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/48.png', alt='')             
+                img(src='@/assets/curso/temas/48b.png', alt='', style="max-width: 500px")            
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Igualmente, se puede ordenar por el resultado de operación, aunque el rendimiento de la consulta disminuye. Ejemplo, para llamadas de larga distancia o celular a 85 pesos el minuto, que se ordene por la llamada que más costo tenga a la que menos costo tenga. 
@@ -446,7 +443,7 @@
 
 
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/49.png', alt='')             
+                img(src='@/assets/curso/temas/49b.png', alt='', style="max-width: 544px")             
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Se puede agrupar por varios criterios a la vez, por ejemplo si se ordenan los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro.  
@@ -458,7 +455,7 @@
 
 
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/50.png', alt='')  
+                img(src='@/assets/curso/temas/50b.png', alt='', style="max-width: 476px")  
     Separador
     #t_4_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.4 Listar y limitar resultados
@@ -487,7 +484,7 @@
                   br
                   | #[b.text-color-acento-contenido DER BY valor DESC  ]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/51.png', alt='')        
+                img(src='@/assets/curso/temas/51b.png', alt='', style="max-width: 479px")       
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Los datos que la consulta arroja seguramente son muchos. Para saber cuántos resultados cumplen con las condiciones de la cláusula #[b.text-color-acento-contenido #[em WHERE]], es preciso contarlos con la función #[b.text-color-acento-contenido #[em COUNT]], pero la consulta no debe usar la cláusula #[b.text-color-acento-contenido #[em ORDER]] BY porque la función #[b.text-color-acento-contenido #[em COUNT]] solamente arroja una fila y con una única columna, por lo tanto, el resultado no se puede ordenar. 
@@ -527,7 +524,7 @@
 
 
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/53.png', alt='')        
+                img(src='@/assets/curso/temas/53b.png', alt='', style="max-width: 453px")  
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Para lograr hacer esto, la cláusula #[b.text-color-acento-contenido #[em LIMIT]] permite dos parámetros. Cuando se utilizan los dos, el primero muestra el número de la primera fila a traer, y el segundo el número de filas a traer. Se puede por ejemplo, rescatar las filas de dos en dos: 
@@ -547,7 +544,7 @@
                   br
                   | #[b.text-color-acento-contenido LIMIT 10, 10 ]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/54.png', alt='')        
+                img(src='@/assets/curso/temas/54b.png', alt='', style="max-width: 428px")          
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
                 p Y con la siguiente consulta se traen los próximos 10. 
@@ -567,7 +564,7 @@
                   br
                   | #[b.text-color-acento-contenido LIMIT 20, 10 ]
               .col-lg-5.mb-4.mb-md-0
-                img(src='@/assets/curso/temas/55.png', alt='')      
+                img(src='@/assets/curso/temas/55b.png', alt='', style="max-width: 433px")  
     Separador
     #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.5 Agrupar filas 

@@ -34,7 +34,7 @@
                 img(src='@/assets/curso/temas/13.png', alt='')
             .row.justify-content-center.align-items-center.p-2
               .col-lg-5.col-md-auto
-                p.text-white  Mire como Perillo tiene el valor por defecto definido en la columna fecha y edad.                
+                p.text-white  Mire como Perillo tiene el valor por defecto definido en las columnas #[em "fecha"] y #[em "edad"].                
               .col-lg-5.mb-4.mb-md-0
                 img(src='@/assets/curso/temas/14.png', alt='')
             .row.justify-content-center.align-items-center.p-2
@@ -53,7 +53,7 @@
       h2 3.2 Edición de registros
     p.mb-5(data-aos='fade-right') Tenemos la posibilidad de cambiar valores de las filas de una tabla utilizando la sentencia #[b #[em  UPDATE]]. En su manera más fácil, los cambios se usan a cada una de las filas, y a las columnas que se les especifique (MySQL 8.0 Reference Manual, 2021). 
     .row.justify-content-center.mb-5
-      .col-lg-5.col-12.mb-lg-0.mb-3: img(src='@/assets/curso/temas/16.png', alt='')
+      .col-lg-5.col-12.mb-lg-0.mb-3: img(src='@/assets/curso/temas/16b.png', alt='')
       .col-lg-5.col-7: img(src='@/assets/curso/temas/17.png', alt='')
     p.mb-5(data-aos='fade-right').fw-bold Estudiemos el siguiente ejemplo:
     .bg-img-1.bg-full.mb-5(data-aos="zoom-in")
@@ -64,7 +64,7 @@
               .col-xl-10
                 .row.align-items-center.justify-content-center
                   .col-md-6
-                    p Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia #[b.text-color-acento-contenido #[em UPDATE: ]]
+                    p Que todas las personas de la tabla #[strong "gente"] tengan la misma fecha utilizando esta sentencia #[b.text-color-acento-contenido #[em UPDATE: ]]
                 
                   .col-md-6
                     figure
@@ -73,7 +73,7 @@
               .col-xl-10
                 .row.align-items-center.justify-content-center
                   .col-md-6
-                    p Al suponer que se necesita ponerle el incrementar la edad por 10 años a cada fila de la tabla gente: 
+                    p Al suponer que se necesita ponerle el incrementar la edad por 10 años a cada fila de la tabla #[strong "gente"]: 
                 
                   .col-md-6
                     figure

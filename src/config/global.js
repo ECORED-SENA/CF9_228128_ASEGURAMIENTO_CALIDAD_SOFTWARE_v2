@@ -204,7 +204,7 @@ export default {
     {
       tema: 'Bases de datos',
       referencia:
-        'Microsoft. (2021). Fundamentos de la normalización de la base de datos.',
+        'Microsoft. (2021). Fundamentos de la normalización de bases de datos.',
       tipo: 'Página web',
       link:
         'https://learn.microsoft.com/es-es/office/troubleshoot/access/database-normalization-description',
@@ -214,30 +214,20 @@ export default {
     {
       termino: 'Base de datos',
       significado:
-        'conjunto ordenado y finito de operaciones que permite hallar la solución de un problema.',
+        'es un sistema organizado de almacenamiento de datos que permite el acceso, la gestión y la actualización de grandes cantidades de información de manera eficiente.',
     },
     {
       termino: 'Diccionario de datos',
       significado:
-        'conjunto de programas, instrucciones y reglas informáticas para ejecutar ciertas tareas en una computadora.',
+        'es una colección estructurada de metadatos que contiene definiciones y representaciones de elementos de datos dentro de un sistema o aplicación.',
     },
     {
       termino: 'Metadatos',
       significado:
-        'conjunto unitario de instrucciones que permite a una computadora realizar funciones diversas, como el tratamiento de textos, el diseño de gráficos, la resolución de problemas matemáticos, el manejo de bancos de datos',
+        'son datos que proporcionan información sobre otros datos. El propósito de los metadatos es describir características relevantes de los datos a los que hacen referencia, facilitando su gestión, uso y localización eficiente.',
     },
   ],
   referencias: [
-    {
-      referencia:
-        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
-      link: '',
-    },
-    {
-      referencia:
-        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
-      link: '',
-    },
     {
       referencia:
         'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
@@ -256,13 +246,13 @@ export default {
     },
     {
       referencia:
-        'MySQL 8.0 Reference Manual. (2021).13.1.20.5 FOREIGN KEY Constraints. MySQL.',
+        'MySQL 8.0 Reference Manual. (2021). 15.1.20.5 FOREIGN KEY Constraints.. MySQL.',
       link:
         'https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html',
     },
     {
       referencia:
-        'MySQL 8.0 Reference Manual. (2021). 3.3.2 Creating a Table. MySQL.',
+        'MySQL 8.0 Reference Manual. (2021). 5.3.2 Creating a Table. MySQL.',
       link: 'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
     },
     {
