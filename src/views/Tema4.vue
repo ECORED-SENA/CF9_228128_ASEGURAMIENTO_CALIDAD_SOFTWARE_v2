@@ -139,7 +139,7 @@
                 p Para listar todos los elementos de la tabla se debe usar la sentencia:  #[b.text-color-acento-contenido #[em SELECT * FROM cdr]]
                   br
                   br
-                  |Escriba la sentencia anterior. Al decir *  estamos diciendo que seleccione todas las columnas de la tabla cdr: 
+                  |Escriba la sentencia anterior. Al decir *  estamos diciendo que seleccione todas las columnas de la tabla #[b cdr]: 
               .col-lg-5.mb-4.mb-md-0
                 img(src='@/assets/curso/temas/35b.png', alt='')            
             .row.justify-content-center.align-items-center.p-2

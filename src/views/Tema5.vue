@@ -106,7 +106,7 @@
             img(src='@/assets/curso/temas/72.svg', alt='').m-auto
             p En el diagrama las áreas que no tienen empleados están en el área verde mientras que las áreas con empleados están en el área anaranjada, en la intersección de empleados y áreas. 
       .row.justify-content-center.mb-5
-        .col-lg-5: img(src='@/assets/curso/temas/join2-5b.png', alt='', style="max-width: 618px")
+        .col-lg-5: img(src='@/assets/curso/temas/join2-5.png', alt='')
 
 
 </template>

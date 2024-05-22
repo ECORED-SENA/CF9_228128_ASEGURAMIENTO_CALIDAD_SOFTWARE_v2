@@ -37,7 +37,7 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'Interface de Línea de Comandos de MySQL',
+        titulo: '<i>Interface</i> de Línea de Comandos de MySQL',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -106,7 +106,7 @@ export default {
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'SQL para la consulta de datos - DML',
+        titulo: 'SQL para consulta de datos - DML',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -246,7 +246,7 @@ export default {
     },
     {
       referencia:
-        'MySQL 8.0 Reference Manual. (2021). 15.1.20.5 FOREIGN KEY Constraints.. MySQL.',
+        'MySQL 8.0 Reference Manual. (2021). 15.1.20.5 FOREIGN KEY Constraints. MySQL.',
       link:
         'https://dev.mysql.com/doc/refman/8.0/en/create-table-foreign-keys.html',
     },

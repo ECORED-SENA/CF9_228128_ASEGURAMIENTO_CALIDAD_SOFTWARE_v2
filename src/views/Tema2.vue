@@ -130,10 +130,10 @@
         .row.mb-5.align-items-center
           .col-xl-5
 
-            p La expresión #[strong #[em DELETE CASCADE]], hace que, si se borra una fila de la tabla persona que tiene relacionados registros telefónicos a través de la columna #[strong "persona_id"] en la tabla #[strong "telefonos"], estos registros (localizados en la tabla #[strong "telefonos"]) se borren si se borra el de la tabla #[strong "persona"]; a este tipo de condiciones se le llama restricción de integridad referencial.
+            p La expresión #[strong #[em DELETE CASCADE]], hace que, si se borra una fila de la tabla #[b persona] que tiene relacionados registros telefónicos a través de la columna #[b persona_id] en la tabla #[b telefonos], estos registros (localizados en la tabla telefonos) se borren si se borra el de la tabla #[b persona]; a este tipo de condiciones se le llama restricción de integridad referencial.
 
 
-            p De igual forma #[strong #[em UPDATE CASCADE]], hace que, si el #[strong "id_persona"] en una fila de la tabla #[strong "persona"] es actualizado a otro valor y existen referencias en la columna #[strong "persona_id"] de la tabla #[strong "telefonos"] con el valor inicial, al cambiar el valor en el registro #[strong "id_persona"], cambien también el valor en los registros en la columna #[strong "persona_id"] de la tabla #[strong "telefonos"]. A este tipo de condiciones también se le llama restricción de integridad referencial. 
+            p De igual forma #[strong #[em UPDATE CASCADE]], hace que, si el #[b id_persona] en una fila de la tabla #[b persona] es actualizado a otro valor y existen referencias en la columna #[b persona_id] de la tabla #[b telefonos] con el valor inicial, al cambiar el valor en el registro#[b  id_persona], cambien también el valor en los registros en la columna #[b persona_id] de la tabla #[b telefonos]. A este tipo de condiciones también se le llama restricción de integridad referencial. 
 
             p #[strong Y ejecutándola en la consola, el resultado sería: ]
 
